@@ -1,0 +1,10 @@
+# Analysis (scripts/analyze.py, build_map.py, refresh.py) and the server (app/server.py).
+# The importers need only the Python standard library.
+librosa==1.0.0
+soundfile==0.14.0
+numpy==2.5.4
+torch==2.14.1
+panns-inference==0.1.1
+torchlibrosa==0.1.0
+fastapi==0.156.3
+uvicorn[standard]==0.54.0

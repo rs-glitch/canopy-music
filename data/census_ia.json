@@ -1,0 +1,59 @@
+{
+  "jamendo": {
+    "items": 294067,
+    "tracks_per_item": 2.27,
+    "tracks_per_item_ci95": 0.48,
+    "sampled": 200,
+    "empty_items_in_sample": 0,
+    "est_tracks": 669002,
+    "est_tracks_low": 529310,
+    "est_tracks_high": 808694,
+    "items_by_language": {
+      "untagged": 294065,
+      "english": 2
+    }
+  },
+  "fma": {
+    "items": 16769,
+    "tracks_per_item": 5.7,
+    "tracks_per_item_ci95": 0.65,
+    "sampled": 200,
+    "empty_items_in_sample": 13,
+    "est_tracks": 95499,
+    "est_tracks_low": 84628,
+    "est_tracks_high": 106371,
+    "items_by_language": {
+      "untagged": 16769
+    }
+  },
+  "ia_cc_music": {
+    "items": 24954,
+    "tracks_per_item": 5.91,
+    "tracks_per_item_ci95": 3.28,
+    "sampled": 200,
+    "empty_items_in_sample": 25,
+    "est_tracks": 147353,
+    "est_tracks_low": 65533,
+    "est_tracks_high": 229174,
+    "items_by_language": {
+      "untagged": 13348,
+      "english": 5056,
+      "other_language": 6550
+    }
+  },
+  "netlabels_cc": {
+    "items": 59683,
+    "tracks_per_item": 6.27,
+    "tracks_per_item_ci95": 0.85,
+    "sampled": 200,
+    "empty_items_in_sample": 8,
+    "est_tracks": 374212,
+    "est_tracks_low": 323292,
+    "est_tracks_high": 425133,
+    "items_by_language": {
+      "untagged": 54797,
+      "english": 3010,
+      "other_language": 1876
+    }
+  }
+}

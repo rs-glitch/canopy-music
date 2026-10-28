@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Canopy's weekly refresh: Sundays at 4am (or on the next wake if the Mac was asleep).
+     launchd needs absolute paths, so install it from the project folder with:
+       sed -e "s|__CANOPY__|$PWD|g" -e "s|__HOME__|$HOME|g" scripts/canopy.refresh.plist > ~/Library/LaunchAgents/canopy.refresh.plist
+       launchctl load ~/Library/LaunchAgents/canopy.refresh.plist
+     Run now: launchctl start canopy.refresh   (log: ~/Library/Logs/canopy-refresh.log)
+     launchd cannot open files under ~/Documents itself, so the log lives outside it. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>canopy.refresh</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/caffeinate</string><string>-i</string>
+    <string>__CANOPY__/.venv/bin/python</string><string>-I</string>
+    <string>__CANOPY__/scripts/refresh.py</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict><key>Weekday</key><integer>0</integer><key>Hour</key><integer>4</integer><key>Minute</key><integer>0</integer></dict>
+  <key>StandardOutPath</key><string>__HOME__/Library/Logs/canopy-refresh.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/Library/Logs/canopy-refresh.log</string>
+  <key>LowPriorityIO</key><true/>
+  <key>Nice</key><integer>5</integer>
+</dict>
+</plist>
