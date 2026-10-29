@@ -843,7 +843,7 @@ None of it is kept.
 ### 2. Environment
 
 ```bash
-cd canopy                              # the project folder
+cd canopy-music                        # the project folder
 uv venv .venv --python 3.12
 uv pip install --python .venv/bin/python -r requirements.txt
 echo YOUR_CLIENT_ID > .jamendo_client_id
@@ -1018,7 +1018,7 @@ From the feature list, numbers 14–19, not built:
 ## 17. File map
 
 ```
-canopy/
+canopy-music/
 ├── README.md                 short operating manual
 ├── PROGRESS.md               how the project grew, stage by stage
 ├── requirements.txt          pinned Python packages for analysis and the server
